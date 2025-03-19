@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3703e0d5ea.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1>Shashank M P</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Aspairing Artificial Intelligence And Data Science graduate</p>
+            <h1>Hi, I'm <span>Shashank</span><br> from India</h1>
+        </div>
+    </div>
+</div>
+<!--------------------------------about---------------------------------->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/mp-final.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I’m Shashank, a recent graduate with a Bachelor of Engineering in Artificial Intelligence & Data Science. I have hands-on experience in machine learning, data analytics, and software development, with key projects in areas like lung cancer prediction, sign language recognition, and video game sales analysis. My expertise includes SQL, Python, and data mining tools, and I’m skilled in using data to drive insights and build predictive models.</p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                    <p class="tab-links"onclick="opentab('experience')">experience</p>
+                </div>
+                <div class="tab-contents active-tab"  id="skills">
+                    <ul>
+                        <li><span>Data Analyst</span><br>
+                            <li>Python</li>
+                            <li>Power Bi</li>
+                            <li> Excel</li>
+                        </li>
+                        <li><Span>Machine learning</Span><br>
+                            <li>Numpy</li>
+                            <li>Pandas</li>
+                            <li>Tensorflow</li>
+                        </li>
+                        <li><span>AWS</span><br>
+                            <li>EC2</li>
+                            <li>S3</li>
+                            <li>devops</li>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents " id="education">
+                    <ul>
+                        <li><span>2017-2018</span><br>
+                            <li>Sri Sathya Sai Loka Seva High School</li>
+                        </li>
+                        <li><Span>2018-2020</Span><br>
+                            <li>Mangalore Independent PU College</li>
+                            
+                        </li>
+                        <li><span>2020-204</span><br>
+                            <li>East West Institute Of Technology</li>
+                            
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents " id="experience">
+                    <ul>
+                        <li><span>centum foundation</span><br>
+                            <li>Sri Sathya Sai Loka Seva High School</li>
+                        </li>
+                        
+                            
+                        
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My servicese</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Data analysis</h2><br>
+                <p>I provide data analysis services, including cleaning, EDA, statistical modeling, dashboards, and automation using Python, SQL, and visualization tools.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-aws"></i>
+                <h2>AWS CLOUD</h2><br>
+                <p>I specialize in AI & ML, with expertise in data preprocessing, model development, deep learning, and deployment using tools like Python, TensorFlow</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Ai & Machine learning</h2><br>
+                <p>I specialize in AI & ML, with expertise in data preprocessing, model development, deep learning, and deployment using tools like Python, TensorFlow</p>
+                <a href="#">learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!---- -----------------portfolio---------->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/images/download.jpg">
+                <div class="layer">
+                    <h3>Sign Languge recognition Using Python</h3>
+                    <p>To view the project click on this</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/images/website.png">
+                <div class="layer">
+                    <h3>Portfolio website</h3>
+                    <p>To view the project click on this</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/images/download (1).jpg">
+                <div class="layer">
+                    <h3>video games sales analysis</h3>
+                    <p>To view the project click on this</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<script>
+    var tablinks  = document.getElementsByClassName("tab-links");
+    var tabcontents  = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
